@@ -1,0 +1,86 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+/* .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+    width:400px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    
+} */
+
+
+#cardsheet{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 20px; */
+    padding: 10px;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+    /* width:400px;  */
+}
+.btn-success {
+    height: 30px;
+    background-color: #198754;
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Set the desired radius in pixels */
+    /* padding: 10px 20px; */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+.btn-success:hover {
+    background-color: #105c38; /* Change the background color on hover */
+}
+
+.btn-outline-info{
+    height: 30px;
+    /* background-color: #007bff; */
+    /* color: #fff; */
+    /* border: #0056b3; */
+    border-radius: 25px; /* Set the desired radius in pixels */
+    /* padding: 10px 20px; */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a hover effect */
+}
+
+.btn-outline-info:hover{
+    background-color: #0056b3;  
+}
+
+.aaa{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.headcontent{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

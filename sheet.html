@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheet Note สรุปแต่ละวิชามหาวิทยาลัย</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-header .course-code {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .card-body {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .btn-order {
+            background-color: #007bff;
+            color: white;
+            border-radius: 25px;
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin-top: auto;
+        }
+        .btn-order:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Sheet Note Summary</h1>
+        
+        <div class="row">
+            <!-- Course 1 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        การเงิน
+                        <span class="course-code">FIN101</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 180 บาท</p>
+                        <p>รายละเอียด: สรุปหลักการและทฤษฎีด้านการเงิน การบริหารเงินทุน และการลงทุน</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        บัญชีเบื้องต้น
+                        <span class="course-code">ACC101</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 150 บาท</p>
+                        <p>รายละเอียด: สรุปหลักการบัญชีขั้นพื้นฐาน การบันทึกรายการค้า และการจัดทำงบการเงิน</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        แคลคูลัส 1
+                        <span class="course-code">MATH101</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 200 บาท</p>
+                        <p>รายละเอียด: สรุปเนื้อหาแคลคูลัสเบื้องต้น อนุพันธ์ และปริพันธ์</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Course 4 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ฟิสิกส์ 1
+                        <span class="course-code">PHY101</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 220 บาท</p>
+                        <p>รายละเอียด: สรุปหลักการและทฤษฎีทางฟิสิกส์ในเรื่องกลศาสตร์ คลื่น และอุณหพลศาสตร์</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 5 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ระบบสารสนเทศทางธุรกิจ
+                        <span class="course-code">BIS101</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 170 บาท</p>
+                        <p>รายละเอียด: สรุปบทบาทของระบบสารสนเทศในองค์กรธุรกิจ และการประยุกต์ใช้เทคโนโลยีสารสนเทศ</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 6 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        กฎหมายธุรกิจ
+                        <span class="course-code">BUS201</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 190 บาท</p>
+                        <p>รายละเอียด: สรุปกฎหมายธุรกิจ และข้อพึงระวังทางกฎหมาย</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Course 7 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        การจัดการทรัพยากรมนุษย์
+                        <span class="course-code">HRM201</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 160 บาท</p>
+                        <p>รายละเอียด: สรุปหลักการและกระบวนการจัดการทรัพยากรมนุษย์ในองค์กร</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 8 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        การตลาดดิจิทัล
+                        <span class="course-code">MKT301</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 180 บาท</p>
+                        <p>รายละเอียด: สรุปแนวคิดและกลยุทธ์การตลาดบนช่องทางดิจิทัล</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 9 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        การเขียนโปรแกรมคอมพิวเตอร์
+                        <span class="course-code">CS101</span>
+                    </div>
+                    <div class="card-body">
+                        <p>ราคา: 220 บาท</p>
+                        <p>รายละเอียด: สรุปหลักการเขียนโปรแกรมคอมพิวเตอร์ขั้นพื้นฐาน</p>
+                        <button class="btn btn-order">สั่งซื้อ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

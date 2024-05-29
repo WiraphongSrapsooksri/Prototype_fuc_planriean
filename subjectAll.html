@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รีวิวรายวิชา</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .card-body {
+            display: flex;
+            /* or flexbox */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-header {
+            background-color: #fff;
+            border-bottom: none;
+            font-size: 1.0rem;
+            font-weight: bold;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .card-body {
+            background-color: #fff;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .keyword-badge {
+            font-size: 0.9em;
+            margin: 2px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 12px;
+            padding: 5px 10px;
+        }
+
+        .form-control {
+            border: 2px solid #ced4da;
+            border-radius: 15px;
+        }
+
+        .review-box {
+            border: 1px solid #ced4da;
+            border-radius: 15px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        h5,
+        h4 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h1 class="text-center mb-4">Keywords Reviews</h1> -->
+
+        <!-- Search Form -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="course-id" class="sr-only">รหัสวิชา</label>
+                        <input type="text" class="form-control" id="course-id" placeholder="รหัสวิชา">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="course-name" class="sr-only">ชื่อวิชา</label>
+                        <input type="text" class="form-control" id="course-name" placeholder="ชื่อวิชา">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="category" class="sr-only">หมวดหมู่</label>
+                        <input type="text" class="form-control" id="category" placeholder="หมวดหมู่">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+          
+            <div class="col-md-8">
+                <!-- Course Details and Reviews -->
+                <p class="headcontent">KeyWord Review</p>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        0043004 Young Entrepreneurs
+                    </div>
+                    <div class="card-body">
+                        <div id="keywords">
+                            <!-- Keywords will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews -->
+                <h4>Reviews</h4>
+                <div id="reviews">
+                    <!-- Reviews will be inserted here -->
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <p class="headcontent">Sheet</p>
+                <!-- Course Cards -->
+                <div class="card mb-3">
+                    <div class="card" id="cardsheet">
+                        <h5 class="card-title">0043004 Young Entrepreneurs</h5>
+                        <p class="card-text">ผู้ประกอบการรุ่นเยาว์</p>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="card-text">โดย: พี่ไก่</p>
+                                <p class="card-text">enroll 3 / 2024</p>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span class="text-muted">(4.5 จาก 5)</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-price">60 BAHT</p>
+                        </div>
+                        <div class="aaa">
+                            <button class="btn btn-outline-info">รายละเอียดเพิ่มเติม</button>
+                            <button class="btn btn-success"><i class="fas fa-shopping-cart"></i>
+                                เพิ่มลงตะกร้า</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Sample data
+        const keywords = ["Start-ups", "Innovation", "Passion", "Risk-taking", "Funding", "Scalability", "มุมมองทำงานเป็นทีม"];
+        const reviews = [
+            "วิชานี้เหมาะสำหรับน้องๆ ที่อยากเป็นผู้ประกอบการรุ่นใหม่จริงๆ นะ เนื้อหาเกี่ยวกับการสร้างสตาร์ทอัพ การนำเสนอนวัตกรรมที่แปลกใหม่ ฝึกให้มีไอริกและความกล้าเสี่ยง รวมถึงการระดมทุนและการขยายธุรกิจอย่างยั่งยืน ถือว่าคุ้มค่ามากๆ สำหรับใครที่อยากเป็นผู้ประกอบการยุคใหม่",
+            "รายวิชานี้น่าสนใจมากสำหรับพวกน้องๆ ที่ลงให้ลวงการหผู้ประกอบการ เนื้อหาแนะนำแนวคิดการสร้างสตาร์ทอัพ การเปิดเผยนวัตกรรมใหม่ๆ ฝึกการกล้าเสี่ยงและการมีวิชั่นที่ท้าทาย รวมถึงเทคนิคการหางบประมาณและการขยายกิจการ ถือเป็นพื้นฐานที่ดีสำหรับการเป็นผู้ประกอบการรุ่นใหม่"
+        ];
+
+        // Inserting data into HTML
+        const keywordsContainer = document.getElementById('keywords');
+
+        keywords.forEach(keyword => {
+            const span = document.createElement('span');
+            span.className = 'keyword-badge';
+            span.innerText = keyword;
+
+            // Enable word wrap by setting the 'white-space' property to 'nowrap'
+            // and applying text overflow ellipsis
+            span.style.whiteSpace = 'nowrap';
+            span.style.overflowText = 'ellipsis';
+
+            // Add margin for spacing between badges
+            span.style.marginRight = '5px';  // Adjust margin value as needed
+
+            keywordsContainer.appendChild(span);
+        });
+
+        const reviewsContainer = document.getElementById('reviews');
+        reviews.forEach(review => {
+            const div = document.createElement('div');
+            div.className = 'review-box';
+            div.innerText = review;
+            reviewsContainer.appendChild(div);
+        });
+    </script>
+</body>
+
+</html>

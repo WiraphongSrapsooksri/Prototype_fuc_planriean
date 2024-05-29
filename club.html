@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายชื่อชมรม</title>
+    <!-- Add Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 15px;
+        }
+        .card-body {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .btn-contact {
+            background-color: #007bff;
+            color: white;
+            border-radius: 25px;
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin-top: auto;
+        }
+        .btn-contact:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">รายชื่อชมรม</h1>
+        
+        <div class="row">
+            <!-- Club 1 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมดนตรีสากล
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 50 คน</p>
+                        <p>รายละเอียด: ชมรมดนตรีสากลมุ่งเน้นการพัฒนาทักษะดนตรีทั้งทางด้านปฏิบัติและทฤษฎี มีการจัดแสดงและฝึกซ้อมอย่างต่อเนื่อง</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Club 2 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมถ่ายภาพ
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 30 คน</p>
+                        <p>รายละเอียด: ชมรมถ่ายภาพสอนเทคนิคการถ่ายภาพขั้นพื้นฐานและขั้นสูง มีการจัดทริปถ่ายภาพและเวิร์กช็อปเป็นประจำ</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Club 3 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมอาสาพัฒนา
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 40 คน</p>
+                        <p>รายละเอียด: ชมรมอาสาพัฒนามุ่งเน้นการทำกิจกรรมเพื่อสังคมและการพัฒนาชุมชน มีการจัดกิจกรรมอย่างต่อเนื่องเพื่อช่วยเหลือผู้ที่ต้องการความช่วยเหลือ</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Club 4 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมวิทยาศาสตร์
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 35 คน</p>
+                        <p>รายละเอียด: ชมรมวิทยาศาสตร์มีการจัดกิจกรรมวิทยาศาสตร์เพื่อสร้างความสนใจและพัฒนาความรู้ด้านวิทยาศาสตร์</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Club 5 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมกีฬา
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 60 คน</p>
+                        <p>รายละเอียด: ชมรมกีฬามีการจัดกิจกรรมกีฬาเพื่อสุขภาพและสร้างความสามัคคีในกลุ่มสมาชิก</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Club 6 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมวรรณกรรม
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 25 คน</p>
+                        <p>รายละเอียด: ชมรมวรรณกรรมส่งเสริมการอ่านและการเขียน มีการจัดกิจกรรมเกี่ยวกับวรรณกรรมอย่างต่อเนื่อง</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Club 7 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมภาษาอังกฤษ
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 45 คน</p>
+                        <p>รายละเอียด: ชมรมภาษาอังกฤษมุ่งเน้นการพัฒนาทักษะภาษาอังกฤษผ่านกิจกรรมต่าง ๆ เช่น การพูด การฟัง และการอ่าน</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Club 8 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมศิลปะ
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 20 คน</p>
+                        <p>รายละเอียด: ชมรมศิลปะมีการจัดกิจกรรมการวาดภาพและงานศิลปะเพื่อพัฒนาความคิดสร้างสรรค์</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Club 9 -->
+            <div class="col-md-4 d-flex align-items-stretch">
+                <div class="card">
+                    <div class="card-header">
+                        ชมรมเทคโนโลยี
+                    </div>
+                    <div class="card-body">
+                        <p>สมาชิก: 55 คน</p>
+                        <p>รายละเอียด: ชมรมเทคโนโลยีเน้นการพัฒนาทักษะด้านเทคโนโลยีและการประยุกต์ใช้ในชีวิตประจำวัน</p>
+                        <button class="btn btn-contact">ติดต่อชมรม</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
